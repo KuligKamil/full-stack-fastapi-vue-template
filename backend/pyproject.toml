@@ -1,10 +1,8 @@
 [project]
-name = "fastapi project template"
+name = ""
 version = "0.0.1"
 description = "Default template for PDM package"
-authors = [
-    {name = "KuligKamil", email = "kamil.marek.kulig@gmail.com"},
-]
+authors = [{ name = "KuligKamil", email = "kamil.marek.kulig@gmail.com" }]
 dependencies = [
     "pytest==8.3.2",
     "ruff==0.6.1",
@@ -18,7 +16,7 @@ dependencies = [
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
-license = {text = "MIT"}
+license = { text = "MIT" }
 
 
 [tool.pdm]
@@ -31,14 +29,14 @@ select = [
     "F",  # pyflakes
     "I",  # isort
     "B",  # flake8-bugbear
-    "C4",  # flake8-comprehensions
-    "UP",  # pyupgrade
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
 ]
 ignore = [
     "E501",  # line too long, handled by black
     "B008",  # do not perform function calls in argument defaults
     "C901",  # too complex
     "W191",  # indentation contains tabs
-    "E712", # for models TODO: ignore for only one file
+    "E712",  # for models TODO: ignore for only one file
     "UP007", # issue with pydantic optioanl and pipe |
 ]
