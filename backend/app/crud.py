@@ -27,6 +27,14 @@ async def get_items(
     return (data, len(data))
 
 
+# // TODO:
+# // possibilities to click and send to link
+# // to get list of tags
+# // string
+# // int
+# // boolean
+# // date
+# // sort by
 async def get_data():
     return [
         {
