@@ -4,7 +4,7 @@ defineProps<{
 }>()
 </script>
 <template>
-  <div class="border-solid border-2 border-black py-1/2 px-1 rounded-full text-xs font-bold text-cente">
+  <span class="border-solid border-2 border-black py-1/2 px-1 rounded-full text-xs font-bold text-center w-min">
     {{ text }}
-  </div>
+  </span>
 </template>

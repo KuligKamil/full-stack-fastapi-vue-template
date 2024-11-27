@@ -28,5 +28,33 @@ class ItemCreate(BaseModel):
     meaning: str
 
 
-class Item(Date, Active, ItemCreate):
-    pass
+# class Item(Date, Active, ItemCreate):
+#     pass
+
+
+class Item(BaseModel):
+    _id: str
+    name: str
+    date: str
+    tags: list[str]
+    link: str
+
+
+class ColumnType(SuperEnum):
+    string = "string"
+    number = "number"
+    boolean = "boolean"
+    tags = "tags"
+    date = "date"
+
+
+class Header(BaseModel):
+    label: str
+    field: str
+    type: ColumnType
+
+
+class Table(BaseModel):
+    items: list[Item]
+    headers: list[Header]
+    fields: list[str]
